@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9d1b36bed4ba71b3b8ea03c9eaca1c90",
-    "content-hash": "52b573e93c3911ca432a5e711fb91d6a",
+    "hash": "70520a9eda8ec560f6091140002be54c",
+    "content-hash": "cf2b841745531367fdd03f814d405005",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -55,6 +55,68 @@
                 "stream_filter_register"
             ],
             "time": "2015-11-08 23:41:30"
+        },
+        {
+            "name": "composer/semver",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/semver.git",
+                "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/semver/zipball/c7cb9a2095a074d131b65a8a0cd294479d785573",
+                "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.2 || ^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.5 || ^5.0.5",
+                "phpunit/phpunit-mock-objects": "2.3.0 || ^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Semver\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nils Adermann",
+                    "email": "naderman@naderman.de",
+                    "homepage": "http://www.naderman.de"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                },
+                {
+                    "name": "Rob Bast",
+                    "email": "rob.bast@gmail.com",
+                    "homepage": "http://robbast.nl"
+                }
+            ],
+            "description": "Semver library that offers utilities, version constraint parsing and validation.",
+            "keywords": [
+                "semantic",
+                "semver",
+                "validation",
+                "versioning"
+            ],
+            "time": "2016-08-30 16:08:34"
         },
         {
             "name": "gitonomy/gitlib",
@@ -846,6 +908,43 @@
             ],
             "description": "Collection library",
             "time": "2016-11-05 12:45:03"
+        },
+        {
+            "name": "pitchart/version",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pitchart/version.git",
+                "reference": "a38bc1345920e0ab80ee47498ddc8d3935a61103"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pitchart/version/zipball/a38bc1345920e0ab80ee47498ddc8d3935a61103",
+                "reference": "a38bc1345920e0ab80ee47498ddc8d3935a61103",
+                "shasum": ""
+            },
+            "require-dev": {
+                "composer/semver": "^1.4",
+                "phpmd/phpmd": "^2.5",
+                "phpunit/phpunit": "^5.7",
+                "sebastian/phpcpd": "^2.0",
+                "squizlabs/php_codesniffer": "^2.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Pitchart\\Version\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Julien VITTE",
+                    "email": "vitte.julien@gmail.com"
+                }
+            ],
+            "description": "Manipulate version numbers",
+            "time": "2017-01-03 22:20:17"
         },
         {
             "name": "psr/cache",
@@ -3115,7 +3214,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "pitchart/version": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
