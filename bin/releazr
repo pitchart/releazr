@@ -38,7 +38,7 @@ else {
     $application->setDefaultCommand($defaultCommand->getName());
 */
     $application->addCommands([
-        new Command\ListCommand(),
+        new Command\VersionsCommand(),
     ]);
 /*
 }
